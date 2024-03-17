@@ -12,7 +12,7 @@ def main():
         print("Error")
     else:
         computer = random.choice(list)
-        print(f'You: {player}\nMe: {computer}')
+        print(f'You: {player}\nComputer: {computer}')
         if player == computer:
             print('draw')
         elif player == 'rock' and computer == 'paper':
