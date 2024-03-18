@@ -15,14 +15,12 @@ def main():
         print(f'You: {player}\nComputer: {computer}')
         if player == computer:
             print('draw')
-        elif player == 'rock' and computer == 'paper':
-            loose()
-        elif player == 'paper' and computer == 'scissors':
-            loose()
-        elif player == 'scissors' and computer == 'rock':
+        elif player == 'rock' and computer == 'paper' \
+                or player == 'paper' and computer == 'scissors' \
+                or player == 'scissors' and computer == 'rock':
             loose()
         else:
-            print('You win')
+            print('You won')
 
 
 while True:
